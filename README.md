@@ -1,39 +1,46 @@
 # Data Mining the Yelp Open Dataset
 
----
-
-## Team members:
-    - Daniel Bae
-    - Thomas Cochran
-    - Patrick Conley
-
 ## Description:
-    1. Are there optimal operating hours and locations for different categories of businesses?
-    2. Predict which businesses are likely to fail or succeed.
-    3. TODO
+
+1. Are there optimal operating hours and locations for different categories of businesses?
+
+2. Predict which businesses are likely to fail or succeed.
+
+3. TODO
 
 ## Prior Work:
-TODO
+
+* TODO
 
 ## Datasets:
-    - Link: [Yelp Dataset](https://www.yelp.com/dataset)
+
+* **Download Link**: [Yelp Dataset](https://www.yelp.com/dataset)
  
-    - Documentation: [Yelp dataset attributes and types](https://www.yelp.com/dataset/documentation/main)
+* **Documentation**: [Yelp dataset attributes and types](https://www.yelp.com/dataset/documentation/main)
     
-    - Files:
-        - yelp_academic_dataset_business.json
-        - yelp_academic_dataset_checkin.json
-        - yelp_academic_dataset_review.json
-        - yelp_academic_dataset_tip.json
-        - yelp_academic_dataset_user.json
+* **Files**:
+
+> yelp_academic_dataset_business.json<br>
+> yelp_academic_dataset_checkin.json<br>
+> yelp_academic_dataset_review.json<br>
+> yelp_academic_dataset_tip.json<br>
+> yelp_academic_dataset_user.json
     
 ## Proposed work:
-    - **Data cleaning**:
-    - **Data preprocessing**:
-    - **Data integration**:
+
+* **Data cleaning**:
+
+* **Data preprocessing**:
+
+* **Data integration**:
 
 ## List of tools:
-TODO
+* TODO
 
 ## Evaluation:
-TODO
+* TODO
+
+## Team members:
+* Daniel Bae
+* Thomas Cochran
+* Patrick Conley
