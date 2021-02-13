@@ -1,4 +1,4 @@
-# TITLE: TODO
+# Data Mining the Yelp Open Dataset
 
 ---
 
@@ -7,14 +7,13 @@
     - Thomas Cochran
     - Patrick Conley
 
-
 ## Description:
-TODO
-
+    1. Are there optimal operating hours and locations for different categories of businesses?
+    2. Predict which businesses are likely to fail or succeed.
+    3. TODO
 
 ## Prior Work:
 TODO
-
 
 ## Datasets:
     - Link: [Yelp Dataset](https://www.yelp.com/dataset)
@@ -28,16 +27,13 @@ TODO
         - yelp_academic_dataset_tip.json
         - yelp_academic_dataset_user.json
     
-
 ## Proposed work:
     - **Data cleaning**:
     - **Data preprocessing**:
     - **Data integration**:
 
-
 ## List of tools:
 TODO
-
 
 ## Evaluation:
 TODO
