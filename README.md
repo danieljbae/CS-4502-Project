@@ -29,6 +29,8 @@
 ## Proposed work:
 
 * **Data cleaning**:
+* Normalize user attributes such as `compliment_cool`, `compliment_funny`, `compliment_cute` using Z-Scores or Min-Max 
+
 
 * **Data preprocessing**:
 
