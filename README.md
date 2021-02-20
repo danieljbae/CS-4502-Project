@@ -35,13 +35,30 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
     
 ## Proposed work:
 
+**Data Preprocessing:**
+
 * **Data cleaning**:
-    1. Normalize user attributes such as `compliment_cool`, `compliment_funny`, `compliment_cute` using Z-Scores or Min-Max 
+    1. Ignore users with no text reviews (i.e. missing data points)
+    2. Ignore reviews with no attached text
+    3. Bin and cluster average user rating to detect users that preferentially give the highest or lowest possible rating.
+    4. Verify all user data points are unique
+    5. If time permits: detect and remove fake reviews and spam with machine learning techniques
 
-
-* **Data preprocessing**:
+* **Data reduction**: 
+    1. Remove attribute columns that are not relevant to our project.
+    2. 
 
 * **Data integration**:
+    1. 
+
+* **Data transformation**:
+    1. Normalize user attributes such as `compliment_cool`, `compliment_funny`, `compliment_cute` using Z-Scores or Min-Max 
+
+**Classification:**
+    1. TODO
+
+**Clustering:**
+    1. TODO
 
 ## List of tools:
 
