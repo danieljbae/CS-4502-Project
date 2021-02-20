@@ -10,6 +10,8 @@
 
 4. Are there clusters of Yelp users who more frequently give positive or negative reviews? What is common among these users?
 
+5. How does the frequency of posting pictures vary with user rating and the type of object being photographed?
+
 ## Prior Work:
 
 Since this dataset was released by Yelp for academic purposes, there is a plethora of prior work. Some relevant works include:
