@@ -10,7 +10,9 @@
 
 4. Are there clusters of Yelp users who more frequently give positive or negative reviews? What is common among these users?
 
-5. How does the frequency of posting pictures vary with user rating and the type of object being photographed?
+5. How does the frequency of posting pictures vary with user rating? Are there objects that are more likely to be photographed when reviewed?
+
+6. Do users that give more negative reviews have a network of friends that are also more likely to give negative reviews?
 
 ## Prior Work:
 
@@ -40,15 +42,15 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
 **Data Preprocessing:**
 
 * **Data cleaning**:
-    1. Ignore users with no text reviews (i.e. missing data points)
-    2. Ignore reviews with no attached text
-    3. Bin and cluster average user rating to detect users that preferentially give the highest or lowest possible rating.
-    4. Verify all user data points are unique
-    5. If time permits: detect and remove fake reviews and spam with machine learning techniques
+    1. Ignore users with no text reviews (i.e. missing data points).
+    2. Ignore reviews with no attached text.
+    3. Bin and cluster average user rating to detect "outlier" users that preferentially give the highest or lowest possible rating.
+    4. Verify all user data points are unique.
+    5. If time permits: detect and remove fake reviews and spam with machine learning techniques.
 
 * **Data reduction**: 
-    1. Remove attribute columns that are not relevant to our project.
-    2. 
+    1. Remove attribute columns that are not relevant to our project using either forward selection or backward elimination.
+    2. Identify and remove redundant data using correlation analysis (e.g. perhaps "useful" and "cool" vote counts are highly correlated)
 
 * **Data integration**:
     1. 
