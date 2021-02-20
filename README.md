@@ -19,9 +19,6 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
 * Identifying Social Sub-Groups Through Clustering of Yelp User Data: [Link](https://rpubs.com/saraabi/yelp_clustering)
 * Text Mining and Sentiment Analysis for Yelp Reviews of A Burger Chain: [Link](https://towardsdatascience.com/text-mining-and-sentiment-analysis-for-yelp-reviews-of-a-burger-chain-6d3bcfcab17b)
 
-
-
-
 ## Datasets:
 
 * **Download Link**: [Yelp Dataset](https://www.yelp.com/dataset)
@@ -39,13 +36,28 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
 ## Proposed work:
 
 * **Data cleaning**:
+    1. Normalize user attributes such as `compliment_cool`, `compliment_funny`, `compliment_cute` using Z-Scores or Min-Max 
+
 
 * **Data preprocessing**:
 
 * **Data integration**:
 
 ## List of tools:
-* TODO
+
+* **Data analysis and statistics**
+
+    1. Pandas ([Link](https://pandas.pydata.org/))
+    2. Numpy ([Link](https://numpy.org/))
+
+* **Data storage and integration**
+
+    1. Sqlite ([Link](https://www.sqlite.org/))
+
+* **Text processing and classification**
+
+    1. Keras ([Link](https://keras.io/))
+    2. Pytorch ([Link](https://pytorch.org/))
 
 ## Evaluation:
 * TODO
