@@ -53,10 +53,11 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
     2. Identify and remove redundant data using correlation analysis (e.g. perhaps "useful" and "cool" vote counts are highly correlated)
 
 * **Data integration**:
-    1. 
+    1. Aggregate the initial json files into a relational database.
 
 * **Data transformation**:
-    1. Normalize user attributes such as `compliment_cool`, `compliment_funny`, `compliment_cute` using Z-Scores or Min-Max 
+    1. Normalize user attributes such as `compliment_cool`, `compliment_funny`, `compliment_cute` using Z-Scores or Min-Max.
+    2. Use the bag-of-words model to simply review text (i.e. tokenize words, generate feature vectors for sentences)
 
 **Classification:**
     1. TODO
