@@ -12,7 +12,7 @@
 
 5. How does the frequency of posting pictures vary with user rating? Are there objects that are more likely to be photographed when reviewed?
 
-6. Do users that give more negative reviews have a network of friends that are also more likely to give negative reviews?
+6. Do users that are more likely to give negative reviews have a network of friends that are also more likely to give negative reviews?
 
 ## Prior Work:
 
@@ -53,17 +53,11 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
     2. Identify and remove redundant data using correlation analysis (e.g. perhaps "useful" and "cool" vote counts are highly correlated)
 
 * **Data integration**:
-    1. Aggregate the initial json files into a relational database.
+    1. Aggregate the initial json files into a relational database to improve accessibility.
 
 * **Data transformation**:
     1. Normalize user attributes such as `compliment_cool`, `compliment_funny`, `compliment_cute` using Z-Scores or Min-Max.
-    2. Use the bag-of-words model to simply review text (i.e. tokenize words, generate feature vectors for sentences)
-
-**Classification:**
-    1. TODO
-
-**Clustering:**
-    1. TODO
+    2. Use the bag-of-words model to simply review text (i.e. tokenize words, generate feature vectors for sentences).
 
 ## List of tools:
 
@@ -82,7 +76,14 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
     2. Pytorch ([Link](https://pytorch.org/))
 
 ## Evaluation:
-* TODO
+
+* **Similarity measures**:
+    - Use different similarity measures depending on the data types involved, such as: Minkowski distance or euclidean distance.
+
+* **Association rules and pattern evaluation measures**:
+    - Identify associations by partitioning the data to find candidate itemsets (e.g. (1-star review) => funny review tag, (positive text review) => useful review tag)
+    - Examine interestingness of associations using null-invariant measures, such as: Kulczynski and Jaccard.
+
 
 ## Team members:
 * Daniel Bae
