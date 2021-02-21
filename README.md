@@ -2,15 +2,37 @@
 
 ## Description:
 
+	The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands businesses in 11 metropolitan areas. The raw data is contained in 5 json files containing user info, business info, ratings, and reviews. A number of interesting questions can be answered using these data:
+
 1. Are there optimal operating hours and locations for different categories of businesses?
 
 2. Predict which businesses are likely to fail or succeed.
 
-3. TODO
+3. Are more active yelpers prone to giving higher ratings or more thorough reviews?
+
+4. Do some yelpers give generally negative/positive reviews?
+
+5. Are there common words present in reviews with similar ratings?
+
+6. How consistent are ratings with common keywords?
+
+7. Do business ratings change over time? Can this change be attributed to attributes in the review data?
+
+8. What is the highest rated type of food (i.e. what restaurant is likely to please most?)
+
+9. What type of business receives the best/worst ratings?
+
+10. Does the quantity of photos indicate the rating of a business?
+
+11. Where is the best/worst region for a business type?  
 
 ## Prior Work:
 
-* TODO
+Category Predictor, Review Autocomplete: 
+https://github.com/Yelp/dataset-examples
+
+Kaggle Notebooks:
+https://www.kaggle.com/yelp-dataset/yelp-dataset/code
 
 ## Datasets:
 
@@ -27,20 +49,22 @@
 > yelp_academic_dataset_user.json
     
 ## Proposed work:
-
-* **Data cleaning**:
-* Normalize user attributes such as `compliment_cool`, `compliment_funny`, `compliment_cute` using Z-Scores or Min-Max 
-
-
-* **Data preprocessing**:
-
-* **Data integration**:
+Remove incomplete user, business, review data
+Remove unecessary attributes
+Fill in empty attributes
+Compile all .json files into a relational database
+Test availability and data format for concurrent remote development
 
 ## List of tools:
-* TODO
+*Python, PyCharm, Jupyter Notebooks, numpy, pandas, matplotlib
+*SQlite, Google/Amazon Cloud database if necessary
+
 
 ## Evaluation:
-* TODO
+* Frequent Itemsets (common words in reviews across ratings)
+* Support, Confidence, Correlation
+* Bayesian Classification
+* Outlier Detection 
 
 ## Team members:
 * Daniel Bae
