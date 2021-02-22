@@ -74,6 +74,8 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
 
     1. Keras ([Link](https://keras.io/))
     2. Pytorch ([Link](https://pytorch.org/))
+    3. NLTK ([Link](https://www.nltk.org/)
+    4. TextBlob ([Link](https://textblob.readthedocs.io/en/dev/))
 
 ## Evaluation:
 
