@@ -6,7 +6,7 @@
 
 2. What makes a review vote tagged as Useful, Funny, or Cool with respect to the review's text and star rating?
 
-3. What are common features of 1-star (negative) and 5-star (positive) text reviews for different categories of business?
+3. What are frequent features of 1-star (negative) and 5-star (positive) text reviews for different categories of business?
 
 4. Are there clusters of Yelp users who more frequently give positive or negative reviews? What is common among these users?
 
@@ -42,11 +42,13 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
 **Data Preprocessing:**
 
 * **Data cleaning**:
-    1. Ignore users with no text reviews (i.e. missing data points).
-    2. Ignore reviews with no attached text.
-    3. Bin and cluster average user rating to detect "outlier" users that preferentially give the highest or lowest possible rating.
-    4. Verify all user data points are unique.
-    5. If time permits: detect and remove fake reviews and spam with machine learning techniques.
+    1. Filter non-english reviews and special characters
+    2. Ignore users with no text reviews (i.e. missing data points).
+    3. Ignore reviews with no attached text.
+    4. Bin and cluster average user rating to detect "outlier" users that preferentially give the highest or lowest possible rating.
+    5. Verify all user data points are unique.
+    6. If time permits: detect and remove fake reviews and spam with machine learning techniques.
+
 
 * **Data reduction**: 
     1. Remove attribute columns that are not relevant to our project using either forward selection or backward elimination.
@@ -64,7 +66,8 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
 * **Data analysis and statistics**
 
     1. Pandas ([Link](https://pandas.pydata.org/))
-    2. Numpy ([Link](https://numpy.org/))
+    2. Numpy ([Link](https://numpy.org/)) 
+    3. NetworkX ([Link](https://networkx.org/))
 
 * **Data storage and integration**
 
@@ -77,6 +80,8 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
     3. NLTK ([Link](https://www.nltk.org/)
     4. TextBlob ([Link](https://textblob.readthedocs.io/en/dev/))
 
+
+
 ## Evaluation:
 
 * **Similarity measures**:
@@ -85,6 +90,8 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
 * **Association rules and pattern evaluation measures**:
     - Identify associations by partitioning the data to find candidate itemsets (e.g. (1-star review) => funny review tag, (positive text review) => useful review tag)
     - Examine interestingness of associations using null-invariant measures, such as: Kulczynski and Jaccard.
+* **Community Detection**:
+    - Evaluate the relative density of links of a community, with the Louvain method or Label Propagation algorithm (e.g. communities of yelp users and their friends)
 
 
 ## Team members:
