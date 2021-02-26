@@ -49,11 +49,11 @@ https://www.kaggle.com/yelp-dataset/yelp-dataset/code
 > yelp_academic_dataset_user.json
     
 ## Proposed work:
-Remove incomplete user, business, review data
-Remove unecessary attributes
-Fill in empty attributes
-Compile all .json files into a relational database
-Test availability and data format for concurrent remote development
+Remove incomplete user, business, review data <br>
+Remove unecessary attributes <br>
+Fill in empty attributes <br>
+Compile all .json files into a relational database <br>
+Test availability and data format for concurrent remote development <br>
 
 ## List of tools:
 *Python, PyCharm, Jupyter Notebooks, numpy, pandas, matplotlib
