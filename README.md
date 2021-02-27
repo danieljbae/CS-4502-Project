@@ -2,17 +2,13 @@
 
 ## Description:
 
-1. Are there optimal operating hours and locations for different categories of businesses?
+1. What makes a review vote tagged as Useful, Funny, or Cool with respect to the review's text and star rating?
 
-2. What makes a review vote tagged as Useful, Funny, or Cool with respect to the review's text and star rating?
+2. What are frequent features of 1-star (negative) and 5-star (positive) text reviews for different categories of business? Are there nuanced patterns amongst major cities in the US?
 
-3. What are frequent features of 1-star (negative) and 5-star (positive) text reviews for different categories of business?
+3. Are there clusters of Yelp users who more frequently give positive or negative reviews? What is common among these users?
 
-4. Are there clusters of Yelp users who more frequently give positive or negative reviews? What is common among these users?
-
-5. How does the frequency of posting pictures vary with user rating? Are there objects that are more likely to be photographed when reviewed?
-
-6. Do users that are more likely to give negative reviews have a network of friends that are also more likely to give negative reviews?
+4. Are there unexpected regions with higher stars (rare patterns)? Something non-trivial that may be discovered are "hidden gems" such as food cart street or local spots
 
 ## Prior Work:
 
