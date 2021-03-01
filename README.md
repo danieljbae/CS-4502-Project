@@ -34,8 +34,8 @@ The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands
 
 Since this dataset was released by Yelp for academic purposes, there is a plethora of prior work. Some relevant works include:
 
-* Category Predictor, Review Autocomplete: [Link](https://github.com/Yelp/dataset-examples)
 * Kaggle Notebooks: [Link](https://www.kaggle.com/yelp-dataset/yelp-dataset/code)
+* Category Predictor, Review Autocomplete: [Link](https://github.com/Yelp/dataset-examples)
 * Inferring Futrue Business Attention: [Link](https://www.yelp.com/html/pdf/YelpDatasetChallengeWinner_InferringFuture.pdf)
 * Sentiment Analysis for Yelp Review Classification: [Link](https://urytrayudu1.medium.com/sentiment-analysis-for-yelp-review-classification-54b65c09ff7b)
 * Identifying Social Sub-Groups Through Clustering of Yelp User Data: [Link](https://rpubs.com/saraabi/yelp_clustering)
@@ -53,7 +53,7 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
 
 * **Data cleaning**:
     1. Filter non-english reviews and special characters
-    2. Remove users with no text reviews and reviews with no attached text.
+    2. Remove users with no text reviews.
     3. Remove unecessary attributes and fill in empty attributes.
     4. Bin and cluster average user rating to detect "outlier" users that preferentially give the highest or lowest possible rating.
     5. Verify all user data points are unique.
@@ -82,7 +82,7 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
     1. Pandas ([Link](https://pandas.pydata.org/))
     2. Numpy ([Link](https://numpy.org/)) 
     3. NetworkX ([Link](https://networkx.org/))
-    4. matplotlib ([Link](https://networkx.org/))
+    4. matplotlib ([Link](https://matplotlib.org/))
 
 * **Data storage and integration**
 
