@@ -2,7 +2,6 @@
 
 ## Description:
 
-The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands businesses in 11 metropolitan areas. The raw data is contained in 5 json files containing user info, business info, ratings, and reviews. A number of interesting questions can be answered using these data:
 
 1. What makes a review vote tagged as Useful, Funny, or Cool with respect to the review's text and star rating?
 
@@ -29,6 +28,8 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
 * Text Mining and Sentiment Analysis for Yelp Reviews of A Burger Chain: [Link](https://towardsdatascience.com/text-mining-and-sentiment-analysis-for-yelp-reviews-of-a-burger-chain-6d3bcfcab17b)
 
 ## Datasets:
+
+The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands businesses in 11 metropolitan areas. The raw data is contained in 5 json files containing user info, business info, ratings, and reviews.
 
 * **Download Link**: [Yelp Dataset](https://www.yelp.com/dataset)
  
