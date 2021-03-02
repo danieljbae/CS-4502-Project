@@ -6,29 +6,16 @@ The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands
 
 1. What makes a review vote tagged as Useful, Funny, or Cool with respect to the review's text and star rating?
 
-2. What are frequent features of 1-star (negative) and 5-star (positive) text reviews for different categories of business? Are there nuanced patterns amongst major cities in the US?
+2. What are frequent features of 1-star (negative) and 5-star (positive) text reviews for different categories of restaurants? Are there nuanced patterns amongst major cities in the US? And how are reviews affected by seasons?
+   - Frequently used words
+   - Review length
+   - User's review count
+   - User's friend network
+   - User's average star rating
 
 3. Are there clusters of Yelp users who more frequently give positive or negative reviews? What is common among these users?
 
 4. Are there unexpected regions with higher stars (rare patterns)? Something non-trivial that may be discovered are "hidden gems" such as food cart street or local spots
-
-5. Are more active yelpers prone to giving higher ratings or more thorough reviews?
-
-6. Do some yelpers give generally negative/positive reviews?
-
-7. Are there common words present in reviews with similar ratings?
-
-8. How consistent are ratings with common keywords?
-
-9. Do business ratings change over time? Can this change be attributed to attributes in the review data?
-
-10. What is the highest rated type of food (i.e. what restaurant is likely to please most?)
-
-11. What type of business receives the best/worst ratings?
-
-12. Does the quantity of photos indicate the rating of a business?
-
-13. Where is the best/worst region for a business type?  
 
 ## Prior Work:
 
@@ -47,7 +34,12 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
  
 * **Documentation**: [Yelp dataset attributes and types](https://www.yelp.com/dataset/documentation/main)
     
-* **Files**: yelp_academic_dataset_business.json, yelp_academic_dataset_checkin.json, yelp_academic_dataset_review.json, yelp_academic_dataset_tip.json, yelp_academic_dataset_user.json
+* **Files**: 
+  * yelp_academic_dataset_business.json
+  * yelp_academic_dataset_checkin.json
+  * yelp_academic_dataset_review.json
+  * yelp_academic_dataset_tip.json
+  * yelp_academic_dataset_user.json
 
 ## Proposed work:
 
