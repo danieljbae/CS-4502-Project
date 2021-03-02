@@ -1,4 +1,4 @@
-# Data Mining the Yelp Open Dataset
+# Text Mining Yelp Restaurant Reviews
 
 ## Description:
 
