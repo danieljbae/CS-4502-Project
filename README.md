@@ -2,6 +2,7 @@
 
 ## Description:
 
+* **Goal:** Identify patterns in positive and negative restaurant reviews that can facilitate improvements in food quality and service.
 
 1. What makes a review vote tagged as Useful, Funny, or Cool with respect to the review's text and star rating?
 
