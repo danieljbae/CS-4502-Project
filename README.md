@@ -5,7 +5,7 @@
 * **Goal:** Identify patterns in restaurant review text that can facilitate improvements in food, service, and review quality.
 
 * **Identify review text patterns for different categories of restaurants:**
-    - What are frequent features found in 1-star and 5-star text reviews for different categories of restaurants?
+    - What are frequent features found in 1-star and 5-star restaurant text reviews?
         - What are frequently used words?
         - How does review length vary?
     - Are there nuanced text review patterns among major cities in the US?
@@ -107,8 +107,7 @@ The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands
     - Evaluate the relative density of links of a community, with the Louvain method or Label Propagation algorithm (e.g. communities of yelp users and their friends)
     
 * **Classification**:
-    - Decision Tree Classification
-    - Bayesian Classification
+    - Classify review text sentiment using Naive Bayesian classification.
 
 ## Team members:
 * Daniel Bae
