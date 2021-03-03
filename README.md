@@ -96,9 +96,11 @@ The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands
 * **Similarity measures**:
     - Use different similarity measures depending on the data types involved, such as: Minkowski distance or euclidean distance.
     
-* **Association rules and pattern evaluation measures**:
+* **Association rules and pattern evaluation:**
     - Identify frequent itemsets (e.g. common words in reviews across ratings)
-    - Identify associations by partitioning the data to find candidate itemsets (e.g. (1-star review) => funny review tag, (positive text review) => useful review tag)
+    - Identify associations between candidate itemsets, for example:
+        - (1-star review) => funny review tag
+        - (positive sentiment) => useful review tag
     - Examine interestingness of associations using null-invariant measures, such as: Kulczynski and Jaccard.
     
 * **Community Detection**:
