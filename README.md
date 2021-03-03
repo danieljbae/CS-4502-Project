@@ -62,7 +62,8 @@ The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands
 
 * **Data transformation**:
     * Normalize user attributes such as `compliment_cool`, `compliment_funny`, `compliment_cute` using Z-Scores or Min-Max.
-    * Use the bag-of-words model to simply review text (i.e. tokenize words, generate feature vectors for sentences).
+    * Use the bag-of-words model to simplify review text (i.e. tokenize words, generate feature vectors for sentences).
+    * Model review text sentiment to classify reviews as either negative, positive or neutral
 
 ## List of tools:
 
