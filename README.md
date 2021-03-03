@@ -13,7 +13,8 @@
 
 * **Identify review text patterns among Yelp users:**
     - What makes a user's text review tagged as Useful, Funny, or Cool?
-    - Are there clusters of Yelp users who more frequently give positive or negative reviews? What is common among these users?
+    - Are there clusters of Yelp users who more frequently give positive or negative reviews? 
+        - What is common among these users?
         - Are there associations between total review count, average star rating, or friend network and review negativity?
 
 ## Prior Work:
@@ -45,50 +46,50 @@ The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands
 ## Proposed work:
 
 * **Data cleaning**:
-    1. Filter non-english reviews and special characters
-    2. Remove users with no text reviews.
-    3. Remove unecessary attributes and fill in empty attributes.
-    4. Bin and cluster average user rating to detect "outlier" users that preferentially give the highest or lowest possible rating.
-    5. Verify all user data points are unique.
-    6. If time permits: detect and remove fake reviews and spam with machine learning techniques.
+    * Filter non-english reviews and special characters
+    * Remove users with no text reviews.
+    * Remove unecessary attributes and fill in empty attributes.
+    * Bin and cluster average user rating to detect "outlier" users that preferentially give the highest or lowest possible rating.
+    * Verify all user data points are unique.
+    * If time permits: detect and remove fake reviews and spam with machine learning techniques.
 
 * **Data reduction**: 
-    1. Remove attribute columns that are not relevant to our project using either forward selection or backward elimination.
-    2. Identify and remove redundant data using correlation analysis (e.g. perhaps "useful" and "cool" vote counts are highly correlated)
+    * Remove attribute columns that are not relevant to our project using either forward selection or backward elimination.
+    * Identify and remove redundant data using correlation analysis (e.g. perhaps "useful" and "cool" vote counts are highly correlated)
 
 * **Data integration**:
-    1. Compile all .json files into a relational database to improve accessibility.
+    * Compile all .json files into a relational database to improve accessibility.
 
 * **Data transformation**:
-    1. Normalize user attributes such as `compliment_cool`, `compliment_funny`, `compliment_cute` using Z-Scores or Min-Max.
-    2. Use the bag-of-words model to simply review text (i.e. tokenize words, generate feature vectors for sentences).
+    * Normalize user attributes such as `compliment_cool`, `compliment_funny`, `compliment_cute` using Z-Scores or Min-Max.
+    * Use the bag-of-words model to simply review text (i.e. tokenize words, generate feature vectors for sentences).
 
 ## List of tools:
 
 * **Development Environment**
-    1. Python ([Link](https://www.python.org/))
-    2. Pycharm ([Link](https://www.jetbrains.com/pycharm/))
-    3. Jupyter Notebook ([Link](https://jupyter.org/))
+    * Python ([Link](https://www.python.org/))
+    * Pycharm ([Link](https://www.jetbrains.com/pycharm/))
+    * Jupyter Notebook ([Link](https://jupyter.org/))
 
 * **Data analysis and statistics**
 
-    1. Pandas ([Link](https://pandas.pydata.org/))
-    2. Numpy ([Link](https://numpy.org/)) 
-    3. NetworkX ([Link](https://networkx.org/))
-    4. matplotlib ([Link](https://matplotlib.org/))
+    * Pandas ([Link](https://pandas.pydata.org/))
+    * Numpy ([Link](https://numpy.org/)) 
+    * NetworkX ([Link](https://networkx.org/))
+    * matplotlib ([Link](https://matplotlib.org/))
 
 * **Data storage and integration**
 
-    1. Sqlite ([Link](https://www.sqlite.org/))
-    2. Google Cloud ([Link](https://cloud.google.com/))
-    3. Amazon Cloud ([Link](https://aws.amazon.com/))
+    * Sqlite ([Link](https://www.sqlite.org/))
+    * Google Cloud ([Link](https://cloud.google.com/))
+    * Amazon Cloud ([Link](https://aws.amazon.com/))
 
 * **Text processing and classification**
 
-    1. Keras ([Link](https://keras.io/))
-    2. Pytorch ([Link](https://pytorch.org/))
-    3. NLTK ([Link](https://www.nltk.org/)
-    4. TextBlob ([Link](https://textblob.readthedocs.io/en/dev/))
+    * Keras ([Link](https://keras.io/))
+    * Pytorch ([Link](https://pytorch.org/))
+    * NLTK ([Link](https://www.nltk.org/)
+    * TextBlob ([Link](https://textblob.readthedocs.io/en/dev/))
 
 ## Evaluation:
 
