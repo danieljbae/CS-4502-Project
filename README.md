@@ -2,20 +2,20 @@
 
 ## Description:
 
-* **Goal:** Identify patterns in restaurant review text that can facilitate improvements in food, service, and review quality.
+* **Goal:** Mining for patterns in restaurant review text that can facilitate improvements in food, service, and review quality.
 
 * **Identify review text patterns for different categories of restaurants:**
     - What are frequent features found in 1-star and 5-star restaurant text reviews?
         - What are frequently used words?
         - How does review length vary?
-    - Are there nuanced text review patterns among major cities in the US?
-    - Can seasonal changes affect text review sentiment?
+    - Are there nuanced review text patterns among major cities in the US?
+    - Can seasonal changes affect review text sentiment?
 
 * **Identify review text patterns among Yelp users:**
     - What makes a user's text review tagged as Useful, Funny, or Cool?
     - Are there clusters of Yelp users who more frequently give positive or negative reviews? 
         - What is common among these users?
-        - Are there associations between total review count, average star rating, or friend network and review negativity?
+        - Are there associations between total review count, average star rating, or friend network?
 
 ## Prior Work:
 
@@ -93,7 +93,9 @@ The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands
 
 ## Evaluation:
 
-* **Similarity measures**:
+* **Clustering and Similarity measures**:
+    - Cluster negative and positive reviews grouped by location, word frequency and count, and month posted.
+    - Cluster users grouped by star review
     - Use different similarity measures depending on the data types involved, such as: Minkowski distance or euclidean distance.
     
 * **Association rules and pattern evaluation:**
@@ -106,8 +108,8 @@ The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands
 * **Community Detection**:
     - Evaluate the relative density of links of a community, with the Louvain method or Label Propagation algorithm (e.g. communities of yelp users and their friends)
     
-* **Classification**:
-    - Classify review text sentiment using Naive Bayesian classification.
+* **Text Classification**:
+    - Evaluate text sentiment using Naive Bayesian classification.
 
 ## Team members:
 * Daniel Bae
