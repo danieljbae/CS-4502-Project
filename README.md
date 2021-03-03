@@ -52,10 +52,10 @@ The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands
     * If time permits: detect and remove fake reviews and spam with machine learning techniques.
 
 * **Data reduction**: 
-    * Remove attribute columns that are not relevant to our project using either forward selection or backward elimination.
+    * Remove attribute columns that are not relevant to our project.
+    * Remove all business categories that are unrelated to food. 
     * Remove users with no text reviews.
-    * Remove unecessary attributes and fill in empty attributes.
-    * Identify and remove redundant data using correlation analysis (e.g. perhaps "useful" and "cool" vote counts are highly correlated)
+    * Remove redundant data using correlation analysis
 
 * **Data integration**:
     * Compile all .json files into a relational database to improve accessibility.
