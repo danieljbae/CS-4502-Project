@@ -49,7 +49,7 @@ The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands
     * Filter non-english reviews and special characters
     * Bin and cluster average user rating to detect "outlier" users that preferentially give the highest or lowest possible rating.
     * Verify all user data points are unique.
-    * If time permits: detect and remove fake reviews and spam with machine learning techniques.
+    * Bin restaurants with similar types of cuisine.
 
 * **Data reduction**: 
     * Remove attribute columns that are not relevant to our project.
