@@ -86,8 +86,6 @@ The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands
 
 * **Text processing and classification**
 
-    * Keras ([Link](https://keras.io/))
-    * Pytorch ([Link](https://pytorch.org/))
     * NLTK ([Link](https://www.nltk.org/)
     * TextBlob ([Link](https://textblob.readthedocs.io/en/dev/))
 
