@@ -59,6 +59,7 @@ The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands
 
 * **Data integration**:
     * Compile all .json files into a relational database to improve accessibility.
+    * Import relational database to the cloud.
 
 * **Data transformation**:
     * Normalize user attributes such as `compliment_cool` and `compliment_funny` using Z-Scores or Min-Max.
