@@ -47,7 +47,7 @@ The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands
 
 * **Data cleaning**:
     * Filter non-english reviews and special characters
-    * Bin and cluster average user rating to detect "outlier" users that preferentially give the highest or lowest possible rating.
+    * Bin and cluster average user rating to detect and remove "outlier" users that preferentially give the highest or lowest possible rating.
     * Verify all user data points are unique.
     * Bin restaurants with similar types of cuisine.
 
@@ -61,7 +61,7 @@ The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands
     * Compile all .json files into a relational database to improve accessibility.
 
 * **Data transformation**:
-    * Normalize user attributes such as `compliment_cool`, `compliment_funny`, `compliment_cute` using Z-Scores or Min-Max.
+    * Normalize user attributes such as `compliment_cool` and `compliment_funny` using Z-Scores or Min-Max.
     * Use the bag-of-words model to simplify review text (i.e. tokenize words, generate feature vectors for sentences).
     * Model review text sentiment to classify reviews as either negative, positive or neutral
 
