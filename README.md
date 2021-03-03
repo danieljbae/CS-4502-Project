@@ -2,20 +2,19 @@
 
 ## Description:
 
-* **Goal:** Identify patterns in positive and negative restaurant reviews that can facilitate improvements in food quality and service.
+* **Goal:** Identify patterns in restaurant review text that can facilitate improvements in food, service, and review quality.
 
-1. What makes a review vote tagged as Useful, Funny, or Cool with respect to the review's text and star rating?
+* **Identify review text patterns for different categories of restaurants:**
+    - What are frequent features found in 1-star and 5-star text reviews for different categories of restaurants?
+        - What are frequently used words?
+        - How does review length vary?
+    - Are there nuanced text review patterns among major cities in the US?
+    - Can seasonal changes affect text review sentiment?
 
-2. What are frequent features of 1-star (negative) and 5-star (positive) text reviews for different categories of restaurants? Are there nuanced patterns amongst major cities in the US? And how are reviews affected by seasons?
-   - Frequently used words
-   - Review length
-   - User's review count
-   - User's friend network
-   - User's average star rating
-
-3. Are there clusters of Yelp users who more frequently give positive or negative reviews? What is common among these users?
-
-4. Are there unexpected regions with higher stars (rare patterns)? Something non-trivial that may be discovered are "hidden gems" such as food cart street or local spots
+* **Identify review text patterns among Yelp users:**
+    - What makes a user's text review tagged as Useful, Funny, or Cool?
+    - Are there clusters of Yelp users who more frequently give positive or negative reviews? What is common among these users?
+        - Are there associations between total review count, average star rating, or friend network and review negativity?
 
 ## Prior Work:
 
