@@ -47,14 +47,14 @@ The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands
 
 * **Data cleaning**:
     * Filter non-english reviews and special characters
-    * Remove users with no text reviews.
-    * Remove unecessary attributes and fill in empty attributes.
     * Bin and cluster average user rating to detect "outlier" users that preferentially give the highest or lowest possible rating.
     * Verify all user data points are unique.
     * If time permits: detect and remove fake reviews and spam with machine learning techniques.
 
 * **Data reduction**: 
     * Remove attribute columns that are not relevant to our project using either forward selection or backward elimination.
+    * Remove users with no text reviews.
+    * Remove unecessary attributes and fill in empty attributes.
     * Identify and remove redundant data using correlation analysis (e.g. perhaps "useful" and "cool" vote counts are highly correlated)
 
 * **Data integration**:
