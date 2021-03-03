@@ -2,17 +2,18 @@
 
 ## Description:
 
-* **Goal:** Mining for patterns in restaurant review text that can facilitate improvements in food, service, and review quality.
+* **Goal:** 
+    - Mining for patterns in restaurant review text that can facilitate improvements in food, service, and review quality.
 
-* **Identify review text patterns for different categories of restaurants:**
-    - What are frequent features found in 1-star and 5-star restaurant text reviews?
+* **Identify text patterns for different categories of restaurants:**
+    - What are frequent features found in 1-star and 5-star restaurant reviews?
         - What are frequently used words?
         - How does review length vary?
-    - Are there nuanced review text patterns among major cities in the US?
-    - Can seasonal changes affect review text sentiment?
+    - Are there nuanced text patterns among major cities in the US?
+    - Can seasonal changes affect text sentiment?
 
-* **Identify review text patterns among Yelp users:**
-    - What makes a user's text review tagged as Useful, Funny, or Cool?
+* **Identify text patterns among Yelp users:**
+    - What makes a user's review tagged as Useful, Funny, or Cool?
     - Are there clusters of Yelp users who more frequently give positive or negative reviews? 
         - What is common among these users?
         - Are there associations between total review count, average star rating, or friend network?
@@ -46,7 +47,7 @@ The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands
 ## Proposed work:
 
 * **Data cleaning**:
-    * Filter non-english reviews and special characters
+    * Filter non-english reviews and special characters.
     * Bin and cluster average user rating to detect and remove "outlier" users that preferentially give the highest or lowest possible rating.
     * Verify all user data points are unique.
     * Bin restaurants with similar types of cuisine.
@@ -94,8 +95,8 @@ The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands
 ## Evaluation:
 
 * **Clustering and Similarity measures**:
+    - Cluster users grouped by star review.
     - Cluster negative and positive reviews grouped by location, word frequency and count, and month posted.
-    - Cluster users grouped by star review
     - Use different similarity measures depending on the data types involved, such as: Minkowski distance or euclidean distance.
     
 * **Association rules and pattern evaluation:**
