@@ -1,21 +1,22 @@
-# Data Mining the Yelp Open Dataset
+# Text Mining Yelp Restaurant Reviews
 
 ## Description:
 
-The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands businesses in 11 metropolitan areas. The raw data is contained in 5 json files containing user info, business info, ratings, and reviews. A number of interesting questions can be answered using these data:
+* **Goal:** 
+    - Mining for patterns in restaurant review text that can facilitate improvements in food, service, and review quality.
 
-1. What makes a review vote tagged as Useful, Funny, or Cool with respect to the review's text and star rating?
+* **Identify text patterns for different categories of restaurants:**
+    - What are frequent features found in 1-star and 5-star restaurant reviews?
+        - What are frequently used words?
+        - How does review length vary?
+    - Are there nuanced text patterns among major cities in the US?
+    - Can seasonal changes affect text sentiment?
 
-2. What are frequent features of 1-star (negative) and 5-star (positive) text reviews for different categories of restaurants? Are there nuanced patterns amongst major cities in the US? And how are reviews affected by seasons?
-   - Frequently used words
-   - Review length
-   - User's review count
-   - User's friend network
-   - User's average star rating
-
-3. Are there clusters of Yelp users who more frequently give positive or negative reviews? What is common among these users?
-
-4. Are there unexpected regions with higher stars (rare patterns)? Something non-trivial that may be discovered are "hidden gems" such as food cart street or local spots
+* **Identify text patterns among Yelp users:**
+    - What makes a user's review tagged as Useful, Funny, or Cool?
+    - Are there clusters of Yelp users who more frequently give positive or negative reviews? 
+        - What is common among these users?
+        - Are there associations between total review count, average star rating, or friend network?
 
 ## Prior Work:
 
@@ -29,6 +30,8 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
 * Text Mining and Sentiment Analysis for Yelp Reviews of A Burger Chain: [Link](https://towardsdatascience.com/text-mining-and-sentiment-analysis-for-yelp-reviews-of-a-burger-chain-6d3bcfcab17b)
 
 ## Datasets:
+
+The Yelp Open Dataset contains over 5 million user reviews on over 170 thousands businesses in 11 metropolitan areas. The raw data is contained in 5 json files containing user info, business info, ratings, and reviews.
 
 * **Download Link**: [Yelp Dataset](https://www.yelp.com/dataset)
  
@@ -44,67 +47,70 @@ Since this dataset was released by Yelp for academic purposes, there is a pletho
 ## Proposed work:
 
 * **Data cleaning**:
-    1. Filter non-english reviews and special characters
-    2. Remove users with no text reviews.
-    3. Remove unecessary attributes and fill in empty attributes.
-    4. Bin and cluster average user rating to detect "outlier" users that preferentially give the highest or lowest possible rating.
-    5. Verify all user data points are unique.
-    6. If time permits: detect and remove fake reviews and spam with machine learning techniques.
+    * Filter non-english reviews and special characters.
+    * Bin and cluster average user rating to detect and remove "outlier" users that preferentially give the highest or lowest possible rating.
+    * Verify all user data points are unique.
+    * Bin restaurants with similar types of cuisine.
 
 * **Data reduction**: 
-    1. Remove attribute columns that are not relevant to our project using either forward selection or backward elimination.
-    2. Identify and remove redundant data using correlation analysis (e.g. perhaps "useful" and "cool" vote counts are highly correlated)
+    * Remove attribute columns that are not relevant to our project.
+    * Remove all business categories that are unrelated to food. 
+    * Remove users with no text reviews.
+    * Remove redundant data using correlation analysis
 
 * **Data integration**:
-    1. Compile all .json files into a relational database to improve accessibility.
+    * Compile all .json files into a relational database to improve accessibility.
+    * Import relational database to the cloud.
 
 * **Data transformation**:
-    1. Normalize user attributes such as `compliment_cool`, `compliment_funny`, `compliment_cute` using Z-Scores or Min-Max.
-    2. Use the bag-of-words model to simply review text (i.e. tokenize words, generate feature vectors for sentences).
+    * Normalize user attributes such as `compliment_cool` and `compliment_funny` using Z-Scores or Min-Max.
+    * Use the bag-of-words model to simplify review text (i.e. tokenize words, generate feature vectors for sentences).
+    * Model review text sentiment to classify reviews as either negative, positive or neutral
 
 ## List of tools:
 
 * **Development Environment**
-    1. Python ([Link](https://www.python.org/))
-    2. Pycharm ([Link](https://www.jetbrains.com/pycharm/))
-    3. Jupyter Notebook ([Link](https://jupyter.org/))
+    * Python ([Link](https://www.python.org/))
+    * Pycharm ([Link](https://www.jetbrains.com/pycharm/))
+    * Jupyter Notebook ([Link](https://jupyter.org/))
 
 * **Data analysis and statistics**
 
-    1. Pandas ([Link](https://pandas.pydata.org/))
-    2. Numpy ([Link](https://numpy.org/)) 
-    3. NetworkX ([Link](https://networkx.org/))
-    4. matplotlib ([Link](https://matplotlib.org/))
+    * Pandas ([Link](https://pandas.pydata.org/))
+    * Numpy ([Link](https://numpy.org/)) 
+    * NetworkX ([Link](https://networkx.org/))
+    * matplotlib ([Link](https://matplotlib.org/))
 
 * **Data storage and integration**
 
-    1. Sqlite ([Link](https://www.sqlite.org/))
-    2. Google Cloud ([Link](https://cloud.google.com/))
-    3. Amazon Cloud ([Link](https://aws.amazon.com/))
+    * Sqlite ([Link](https://www.sqlite.org/))
+    * Google Cloud ([Link](https://cloud.google.com/))
+    * Amazon Cloud ([Link](https://aws.amazon.com/))
 
 * **Text processing and classification**
 
-    1. Keras ([Link](https://keras.io/))
-    2. Pytorch ([Link](https://pytorch.org/))
-    3. NLTK ([Link](https://www.nltk.org/)
-    4. TextBlob ([Link](https://textblob.readthedocs.io/en/dev/))
+    * NLTK ([Link](https://www.nltk.org/)
+    * TextBlob ([Link](https://textblob.readthedocs.io/en/dev/))
 
 ## Evaluation:
 
-* **Similarity measures**:
+* **Clustering and Similarity measures**:
+    - Cluster users grouped by star review.
+    - Cluster negative and positive reviews grouped by location, word frequency and count, and month posted.
     - Use different similarity measures depending on the data types involved, such as: Minkowski distance or euclidean distance.
     
-* **Association rules and pattern evaluation measures**:
+* **Association rules and pattern evaluation:**
     - Identify frequent itemsets (e.g. common words in reviews across ratings)
-    - Identify associations by partitioning the data to find candidate itemsets (e.g. (1-star review) => funny review tag, (positive text review) => useful review tag)
+    - Identify associations between candidate itemsets, for example:
+        - (1-star review) => funny review tag
+        - (positive sentiment) => useful review tag
     - Examine interestingness of associations using null-invariant measures, such as: Kulczynski and Jaccard.
     
 * **Community Detection**:
     - Evaluate the relative density of links of a community, with the Louvain method or Label Propagation algorithm (e.g. communities of yelp users and their friends)
     
-* **Classification**:
-    - Decision Tree Classification
-    - Bayesian Classification
+* **Text Classification**:
+    - Evaluate text sentiment using Naive Bayesian classification.
 
 ## Team members:
 * Daniel Bae
