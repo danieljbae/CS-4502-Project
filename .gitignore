@@ -1,3 +1,5 @@
 scratch/
 venv/
 .env
+data/
+.ipynb_checkpoints
