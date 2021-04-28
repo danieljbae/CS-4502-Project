@@ -18,7 +18,9 @@ Our project focused on three questions:
 
 The Yelp open dataset lists business categories provided by the business owner. With these categories we predicted restaurant types (e.g. American, Fast Food, Pizza, Italian, etc.) through unsupervised classification using K-means clustering. 
 
-Among these, we found that 'Nightlife', 'American', 'Mexican', 'Fast Food', and 'Sandwiches' are the top five most frequently reviewed restaurant types across all Las Vegas reviewers in our dataset. Yelp reviewers with lower review counts (approximately 0 to 5 reviews per user) rated 'specialtyfood', 'coffee', 'pizza', and 'bakeries' more frequently than very high reviewers (approximately 40 to 230 reviews per user) who reviewed 'asian fusion' and 'steak houses' more frequently. 
+Among these, we found that 'Nightlife', 'American', 'Mexican', 'Fast Food', and 'Sandwiches' are the top five most frequently reviewed restaurant types across all Las Vegas reviewers in our dataset. Yelp reviewers with lower review counts (approximately 0 to 5 reviews per user) rated 'specialtyfood', 'coffee', 'pizza', and 'bakeries' more frequently than very high reviewers (approximately 40 to 230 reviews per user) who reviewed 'asian fusion' and 'steak houses' more frequently:
+
+<img src="Analysis/Figures/fig1.png" raw=true>
 
 Our density-based spatial clustering of applications with noise (DBSCAN) findings identify locations around the city where certain restaurant types with good average star reviews (4 to 5) and bad average star reviews (0 to 3) form dense clusters. For example, good sushi bars form clusters around the center of the city, in close proximity to the casinos. In contrast, good mexican restaurants cluster away from the center of the city, while mediocre mexican restaurants remain closer to the center with the casinos (clusters are red, outliers are black):
 
