@@ -30,8 +30,9 @@ Our density-based spatial clustering of applications with noise (DBSCAN) finding
 
 ## Applications
 
-The results of this project can inform current and future restaurant owners about the reviewing trends of Yelp users in the city of Las Vegas, NV. The frequency of reviews received by different types of restaurants across low and high review count users allows restaurant owners to gauge which types of restaurants receive more or less attention from users on the platform. Using this information, restaurant owners may decide to change what food is being served, or change what dining atmosphere their restaurant creates, based on what is receiving more reviews. 
+The results of this project can inform current and future restaurant owners about the reviewing trends of Yelp users in the city of Las Vegas, NV. 
 
+The frequency of reviews received by different types of restaurants across low and high review count users allows restaurant owners to gauge which types of restaurants receive more or less attention from users on the platform. Using this information, restaurant owners may decide to change what food is being served, or change what dining atmosphere their restaurant creates, based on what is receiving more reviews. 
 
 The locations of densely clustered restaurants of the same type can also give new restaurant owners valualbe information about where to open their restaurant. In certain blocks of the city, dense clusters of mediocre star reviewed restaurants could present challenges by creating a poor reputation in an area of the city, or by increasing the competition for customers. Using our results, restaurant owners may decide to avoid the competition or the negative reputation in these densely clustered areas. In either case, applications of our results are clearly directed towards improving the outcome of restaurants in the area by mining interesting patterns from Yelp reviewers in the area.
 
