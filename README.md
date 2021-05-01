@@ -38,6 +38,6 @@ The locations of densely clustered restaurants of the same type can also give ne
 
 ## Links
 
-The presentation video is [here](Presentation/Group1_TextMiningYelpRestaurantReviews_Part6_Video.mp4)
+The presentation video is [here](Group1_TextMiningYelpRestaurantReviews_Part6_Video.mp4)
 
 The final report is [here](Group1_TextMiningYelpRestaurantReviews_Part4.pdf)
