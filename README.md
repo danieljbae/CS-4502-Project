@@ -8,7 +8,7 @@ The goal of our project is to mine interesting patterns in the Yelp Open Dataset
 
 ## Questions
 
-Our project focused on three questions:
+Our project focused on the following questions:
 
 * What restaurant categories are frequently reviewed by Yelp users with low and high review counts?
 * Do restaurants with high or low average star reviews cluster around specific locations in the city?
